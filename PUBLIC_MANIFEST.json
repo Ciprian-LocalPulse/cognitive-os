@@ -43,7 +43,6 @@
     "docs/getting-started.md",
     "docs/privacy-principles.md",
     "docs/project-overview.md",
-    "docs/repository-operations.md",
     "docs/research-principles.md",
     "examples/evidence-card-example.md",
     "examples/experiment-example.md",
@@ -53,3 +52,4 @@
     "scripts/public-validation/validate.cjs"
   ]
 }
+
