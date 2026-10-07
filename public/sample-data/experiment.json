@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "description": "Invented public documentation example; no customer data.",
+  "metric": "subjective focus 1–5",
+  "baseline": [
+    2,
+    3,
+    3
+  ],
+  "followup": [
+    3,
+    4,
+    3
+  ],
+  "causation": false
+}

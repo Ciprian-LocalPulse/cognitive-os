@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you refer to this documentation preview, cite this project."
+type: software
+title: "Cognitive OS"
+version: "0.1.0-alpha"
+date-released: "2026-10-07"
+authors:
+  - family-names: "Pleșca"
+    given-names: "Ciprian Ștefan"
+repository-code: "https://github.com/Ciprian-LocalPulse/cognitive-os"
+url: "https://github.com/Ciprian-LocalPulse/cognitive-os"
+abstract: "A public cognitive-performance documentation and research-methodology preview; not the full commercial product or medical advice."
+license: "LicenseRef-Proprietary"

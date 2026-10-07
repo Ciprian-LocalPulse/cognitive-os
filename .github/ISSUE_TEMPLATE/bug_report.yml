@@ -1,0 +1,20 @@
+name: "Documentation / preview bug"
+description: "Report a reproducible public documentation or asset problem."
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not include medical histories, credentials, personal logs or commercial files."
+  - type: textarea
+    id: context
+    attributes:
+      label: "Problem or proposed correction"
+      description: "Include the affected public page and a clear example."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Sources or reproduction steps"
+      description: "Use original source links and remove private information."
+    validations:
+      required: true
