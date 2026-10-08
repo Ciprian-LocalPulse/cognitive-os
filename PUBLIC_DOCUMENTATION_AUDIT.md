@@ -6,7 +6,7 @@ Date: 2026-10-08. Author: Ciprian Ștefan Pleșca.
 
 ## Repository and version
 
-Repository: [Cognitive OS](https://github.com/Ciprian-LocalPulse/cognitive-os). Branch: `main`. Current base commit: `a5b77091ceab74bce5352667f77f5de3ac859418`. Proposed documentation edition: 1.0.0; this version is independent of scientific validation. Publication status: submitted through a checked pull request to the public main branch; the final remote verification is recorded below after completion. The commit containing this report is identifiable in repository history. Separate Wiki publication remains pending. No protection setting is weakened.
+Repository: [Cognitive OS](https://github.com/Ciprian-LocalPulse/cognitive-os). Branch: `main`. Current base commit: `a5b77091ceab74bce5352667f77f5de3ac859418`. Proposed documentation edition: 1.0.0; this version is independent of scientific validation. Publication status: PASS for the public documentation. Pull request #3 was merged into main on 2026-10-08 at 13:58:06 UTC after all three required checks passed. Authored content commit: `6827e733c24128653c676a000a39c507e7082cf5`. Main integration commit: `4f70a9e7b1147299548570bd383002ab2b5465c5`. The remote and local main matched and Git status was clean after integration. Separate Wiki publication remains pending. No protection setting was weakened.
 
 The remote main branch was fast-forwarded before editing. The author's deletion of docs/repository-operations.md remains respected. No repository visibility, branch protection, authentication or security setting was changed. The separate local development repository remains clean and unchanged; no source, research records or deliverable artifacts were copied from it.
 
@@ -48,11 +48,12 @@ Word counts exclude fenced code and link destinations, retain readable labels an
 
 No distribution-specific image filenames were present in this public checkout. No private originals were touched. Existing neutral hero, social-preview derivatives, conceptual illustrations and synthetic historical screenshots are retained, with a new public description of their limitations. Assets removed: 0. Files deleted by this change: 0.
 
-Files added before this audit and its manifest entry: 33. Files modified: 38. The lists below describe the authored working tree before a final commit, not a successful remote release.
+Files added: 34. Files modified: 33. Files deleted: 0. These are the source-controlled changes integrated through pull request #3.
 
 ### Added
 
 - `.markdownlint.json`
+- `PUBLIC_DOCUMENTATION_AUDIT.md`
 - `WHITEPAPER.md`
 - `assets/README.md`
 - `cspell.json`
@@ -88,15 +89,10 @@ Files added before this audit and its manifest entry: 33. Files modified: 38. Th
 
 ### Modified
 
-- `.github/FUNDING.yml`
 - `.github/ISSUE_TEMPLATE/bug_report.yml`
-- `.github/ISSUE_TEMPLATE/config.yml`
 - `.github/ISSUE_TEMPLATE/documentation.yml`
 - `.github/ISSUE_TEMPLATE/feature_request.yml`
 - `.github/PULL_REQUEST_TEMPLATE.md`
-- `.github/workflows/docs-check.yml`
-- `.github/workflows/links-check.yml`
-- `.github/workflows/security-check.yml`
 - `ARCHITECTURE.md`
 - `CHANGELOG.md`
 - `CITATION.cff`
@@ -130,3 +126,7 @@ Files added before this audit and its manifest entry: 33. Files modified: 38. Th
 ## Remaining publication action
 
 The repository owner must initialize the first Wiki page in an authenticated GitHub browser. This is an authentication prerequisite, not a request for new publication permission: Wiki synchronization and public-main publication were already requested. After initialization, synchronize the reviewed source pages and verify the live Wiki routes. Public documentation can be read through the source copy while that hosting prerequisite remains unresolved. The complete original scope remains FAIL until separate Wiki hosting is verified; local documentation acceptance is PASS.
+
+## Publication record
+
+[Pull request #3](https://github.com/Ciprian-LocalPulse/cognitive-os/pull/3) records the approved public documentation integration and its required checks. This audit follow-up records the actual publication result; its own commit is identifiable through file history. The full requested scope remains FAIL solely because the separate Wiki repository still requires initialization. All fifteen pages are published in the canonical source copy with working navigation.
