@@ -1,6 +1,5 @@
-# Architecture overview
-The research layer supplies verified sources. The evidence layer stores bounded appraisal. The documentation layer explains concepts. The application layer records customer-chosen observations. A private build layer produces approved customer artifacts.
+# Architecture Overview
 
-Public files are curated independently; no recursive copying or automatic sync from commercial sources is allowed. A public-content manifest limits publication to reviewed paths. Screenshots and sample data contain invented demonstration observations.
+This maintained navigation page points to the current [architecture overview](04-architecture.md). Use the [documentation index](README.md), [Whitepaper](../WHITEPAPER.md) and [Wiki](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Home.md) for the complete reading routes.
 
-The customer prototype uses browser-local data with explicit export/import. Data is unencrypted and may be lost if storage is cleared. See [architecture diagrams](../ARCHITECTURE.md) and [privacy principles](privacy-principles.md).
+Public documentation edition 1.0.0; educational use, not medical advice.

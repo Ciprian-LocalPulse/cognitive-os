@@ -6,11 +6,16 @@ function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.
 const files=walk(root),allowed=new Set(manifest.files);
 for(const f of files)if(!allowed.has(f))errors.push('File outside public manifest: '+f);
 for(const f of allowed)if(!files.includes(f))errors.push('Missing manifest file: '+f);
-for(const f of files){if(!f.endsWith('.md'))continue;const s=fs.readFileSync(path.join(root,f),'utf8');if(!/^# /m.test(s))errors.push('Missing page title: '+f);if((s.match(/^```/gm)||[]).length%2)errors.push('Unbalanced fenced code: '+f);if(/[ \t]+$/m.test(s))errors.push('Trailing whitespace: '+f);
+for(const f of files){if(!f.endsWith('.md'))continue;const s=fs.readFileSync(path.join(root,f),'utf8').replaceAll('\r\n','\n');if(!/^# /m.test(s))errors.push('Missing page title: '+f);if((s.match(/^```/gm)||[]).length%2)errors.push('Unbalanced fenced code: '+f);if(/[ \t]+$/m.test(s))errors.push('Trailing whitespace: '+f);
  const targets=[...s.matchAll(/!?\[[^\]]*\]\(([^)]+)\)/g)].map(x=>x[1]);for(const x of s.matchAll(/<img[^>]+src="([^"]+)"/g))targets.push(x[1]);
  for(const target of targets){if(/^https?:/.test(target)||target.startsWith('#'))continue;const full=path.resolve(path.dirname(path.join(root,f)),target.split('#')[0]);localLinks++;if(!full.startsWith(root+path.sep)||!fs.existsSync(full))errors.push('Invalid local reference: '+f+' → '+target);}
- for(const [,diagram] of s.matchAll(/```mermaid\n([\s\S]*?)```/g)){diagrams++;if(!/^flowchart (?:LR|TB)\n/.test(diagram))errors.push('Unsupported diagram format: '+f);if((diagram.match(/\[/g)||[]).length!==(diagram.match(/\]/g)||[]).length)errors.push('Unbalanced diagram nodes: '+f);if((diagram.match(/^\s*subgraph /gm)||[]).length!==(diagram.match(/^\s*end\s*$/gm)||[]).length)errors.push('Unbalanced subgraph: '+f);}
+ for(const [,diagram] of s.matchAll(/```mermaid\n([\s\S]*?)```/g)){diagrams++;if(!/^flowchart (?:LR|TB|TD)\n/.test(diagram))errors.push('Unsupported diagram format: '+f);if((diagram.match(/\[/g)||[]).length!==(diagram.match(/\]/g)||[]).length)errors.push('Unbalanced diagram nodes: '+f);if((diagram.match(/^\s*subgraph /gm)||[]).length!==(diagram.match(/^\s*end\s*$/gm)||[]).length)errors.push('Unbalanced subgraph: '+f);}
 }
 for(const f of files.filter(x=>x.endsWith('.png'))){const data=fs.readFileSync(path.join(root,f));if(data.subarray(0,8).toString('hex')!=='89504e470d0a1a0a')errors.push('Invalid PNG: '+f);const width=data.readUInt32BE(16),height=data.readUInt32BE(20);if(!width||!height)errors.push('Invalid image dimensions: '+f);}
 const upload=fs.readFileSync(path.join(root,'assets/branding/cognitive-os-social-preview-upload.jpg'));if(upload.length>=1024*1024||upload.subarray(0,2).toString('hex')!=='ffd8')errors.push('Invalid or oversized social-preview upload derivative.');
+function words(s){return (s.replace(/```[\s\S]*?```/g,'').replace(/\[([^\]]+)\]\([^)]+\)/g,'$1').match(/\b[\p{L}\p{N}]+(?:['’\-][\p{L}\p{N}]+)*\b/gu)||[]).length;}
+const paper=fs.readFileSync(path.join(root,'WHITEPAPER.md'),'utf8'),wiki=files.filter(f=>f.startsWith('wiki-export/')&&f.endsWith('.md')&&!path.basename(f).startsWith('_'));
+if(words(paper)<1000||!paper.includes('Ciprian Ștefan Pleșca')||!paper.includes('## Abstract')||!paper.includes('## 12. Limitations'))errors.push('Whitepaper acceptance failed');
+if(wiki.length<10||wiki.some(f=>words(fs.readFileSync(path.join(root,f),'utf8'))<500))errors.push('Substantial Wiki acceptance failed');
+if(diagrams<8)errors.push('At least eight Mermaid diagrams required');
 console.log(JSON.stringify({files:files.length,localLinks,diagrams,errors,scope:'Structural checks; rendered Mermaid and scientific correctness require review.'},null,2));if(errors.length)process.exitCode=1;

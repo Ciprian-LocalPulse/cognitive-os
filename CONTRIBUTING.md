@@ -1,11 +1,30 @@
 # Contributing
-Contributions are welcome to public documentation, accessibility descriptions, source corrections and clearly labeled examples. The private product and paid content are outside this repository's contribution scope.
 
-Before a pull request:
-1. Explain the concrete correction or user need.
-2. Link original, verifiable research for scientific claims; distinguish population, outcome and limits. No invented metadata or unsourced benefit claims.
-3. Write original prose and verify rights to any asset. Do not paste competitor material or paid product excerpts.
-4. Run `node scripts/public-validation/validate.cjs`, `node scripts/public-validation/security.cjs`, and `node scripts/public-validation/links.cjs` with Node.js 20+.
-5. Check rendered Markdown, Mermaid and image paths. Describe changes and testing in the pull request.
+Contributions may clarify public documentation, improve accessibility, correct source interpretations or add bounded original examples. The author and maintainer is Ciprian Ștefan Pleșca, Independent Creator and Researcher.
 
-Issues are public. Do not include medical histories, personal logs, credentials or proprietary material. Follow [the code of conduct](CODE_OF_CONDUCT.md). Submission does not grant access to private sources or establish a clinical/scientific endorsement. Changes are reviewed by the maintainer before merging.
+## Proposing a change
+
+1. Identify the affected page and the concrete problem.
+2. Link a verified original source when making a factual correction.
+3. Distinguish bibliographic verification from full-text appraisal and independent review.
+4. Write original prose and verify rights to submitted assets.
+5. Preserve educational limits, uncertainty, author attribution and data privacy.
+6. Submit a pull request explaining the resulting behavior or interpretation.
+
+No personal logs, credentials, internal research records or unrelated implementation source may enter the public repository. Do not provide individualized medical advice in issues.
+
+## Validation
+
+Use Node.js 22 or later for the public scripts:
+
+```sh
+node scripts/public-validation/validate.cjs
+node scripts/public-validation/security.cjs
+node scripts/public-validation/links.cjs
+```
+
+Update PUBLIC_MANIFEST.json for deliberately reviewed public files. Check Markdown, author diacritics, references, internal navigation and rendered Mermaid diagrams. Release review also runs Markdown lint and spelling checks. Automation supplements editorial judgment and does not constitute independent scientific review.
+
+## Rights and conduct
+
+Submissions must be yours to contribute. Read LICENSE.md and CODE_OF_CONDUCT.md. Respect disagreement and revise claims when sources support a narrower interpretation. No institutional affiliation or clinical accreditation is implied by participation.

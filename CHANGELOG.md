@@ -1,21 +1,36 @@
 # Changelog
-Significant public changes are grouped by version and change type. Dates use YYYY-MM-DD. Public documentation versions are separate from commercial completion.
 
-## [Unreleased]
-### Planned
-- Selected documentation clarifications from private v0.2.x research work, only after deliberate approval.
-- Expanded public examples with clearly verified references and bounded claims.
+Public documentation versions identify the documentation edition, not clinical validation or software efficacy.
+
+## [1.0.0] — 2026-10-08 — Documentation Update
+
+### Added
+
+- Academic Whitepaper with selected verified references and explicit limitations.
+- Fifteen substantial source-controlled Wiki pages and professional navigation.
+- Numbered technical documentation, FAQ and glossary.
+- Mermaid architecture, evidence, learning, focus, sleep and local-data diagrams.
+- Research methodology, local-first privacy and citation guidance.
+- Public documentation audit and updated publication manifest.
+
+### Changed
+
+- Established GitHub as the canonical public documentation and research hub.
+- Rewrote README navigation, policies and academic presentation.
+- Separated evidence category, confidence and practical interpretation.
+- Updated citation metadata to the public documentation edition.
+
+### Removed
+
+- Obsolete distribution-specific wording from current public documentation.
 
 ## [0.1.0-alpha] — 2026-10-07
-### Added
-- Public repository architecture, evidence-grading method and research policy.
-- Medical-safety, privacy, security and contribution boundaries.
-- Selected screenshots of the dashboard prototype, baseline profile and experiment workflow.
-- Original branding, diagrams, citation metadata and public documentation.
-- Public-content validation, link and security workflows.
-### Clarified
-- Local-first data architecture and separation of commercial source material.
-- This is a foundation research preview, not the complete commercial product.
 
-## Planned private milestone: 0.2.0
-Not released. Requires at least 25 reviewed evidence cards, 10 complete chapters, checked references, expanded program/workbook, dashboard tests and safety QA. Private development is never automatically pushed here.
+### Added
+
+- Initial public research documentation, architecture and evidence vocabulary.
+- Educational-safety, privacy, security and contribution policies.
+- Selected synthetic examples, prototype screenshots and neutral illustrations.
+- Public-content manifest and validation workflows.
+
+Historical documentation was a foundation preview, not a scientific validation milestone.

@@ -1,6 +1,9 @@
 # Governance
-Ciprian Ștefan Pleșca is the owner and maintainer. Public changes require maintainer review. Scientific claims require original-source verification and explicit scope, uncertainty and safety wording. An editorial decision is not institutional or clinical certification.
 
-The public main branch contains stable documentation. A develop branch may be used for public documentation only when useful. Commercial branches, databases, paid content and internal build systems must never be pushed here.
+Ciprian Ștefan Pleșca, Independent Creator and Researcher, maintains the project. No university position, academic degree or institutional affiliation is asserted.
 
-Public updates are selected manually from private work; there is no automatic synchronization. Scope and license decisions remain with the owner. The roadmap defines gates rather than fixed promises. Release notes distinguish public previews from commercial releases.
+The main branch is the canonical public documentation source. Changes require deliberate public-scope review, citation checks and validation. The repository does not automatically synchronize unrelated project directories. The curated manifest defines publication scope.
+
+Wiki pages are authored in wiki-export and synchronized into the GitHub Wiki repository after checks. Corrections should be made in the source-controlled copy first. Wiki history and main-repository history remain distinct.
+
+Documentation milestones describe accepted public artifacts. Future research directions are questions, not promised dates or scientific credentials. Claims of independent review may be added only when the scope and evidence of that review are documented.

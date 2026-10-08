@@ -1,4 +1,4 @@
-# Evidence Framework
+# Evidence system
 
 ## Categories and interpretation
 
@@ -52,3 +52,5 @@ Readers can propose a correction by identifying the exact statement, source and 
 [Wiki Home](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Home.md) · [Whitepaper](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/WHITEPAPER.md) · [Documentation](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/docs/README.md)
 
 © 2026 Ciprian Ștefan Pleșca. Educational and informational use; not medical advice.
+
+[Documentation index](README.md) · [Expanded Wiki discussion](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Evidence-Framework.md)

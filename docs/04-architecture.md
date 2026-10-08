@@ -1,4 +1,4 @@
-# System Architecture
+# Technical architecture
 
 ## Why separate layers
 
@@ -55,3 +55,5 @@ Publication uses a curated manifest of public paths. Source-controlled Wiki page
 [Wiki Home](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Home.md) · [Whitepaper](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/WHITEPAPER.md) · [Documentation](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/docs/README.md)
 
 © 2026 Ciprian Ștefan Pleșca. Educational and informational use; not medical advice.
+
+[Documentation index](README.md) · [Expanded Wiki discussion](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/System-Architecture.md)
