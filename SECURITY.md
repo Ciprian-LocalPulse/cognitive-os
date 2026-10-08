@@ -1,14 +1,17 @@
 # Security policy
+
 ## Supported scope
-The current public documentation preview (0.1.0-alpha) is maintained. There is no production service or public commercial application to support. Private product versions have separate release gates and are not distributed through this repository.
+
+Public documentation edition 1.0.0 is maintained. This repository hosts documentation, selected examples and validation scripts, not a production service or an installable dashboard runtime.
 
 ## Reporting vulnerabilities
-Use GitHub's **Security → Report a vulnerability** private reporting feature when enabled. Do not post secrets, personal logs or private product material in public issues. If private reporting is unavailable, open a minimal issue requesting a confidential reporting channel without including exploit details or sensitive data.
 
-## Responsible disclosure
-Report the affected version, a reproducible description and impact without third-party personal information. Allow the maintainer to investigate and coordinate a fix before publishing details. Response times are not guaranteed for this independent project; active exploitation or personal safety concerns require appropriate professional channels.
+Use GitHub's Security → Report a vulnerability private reporting feature when available. Do not post credentials, personal logs or exploit details in public issues. If private reporting is unavailable, open a minimal issue requesting a confidential channel without sensitive information.
 
-## Privacy and workflow boundaries
-Public workflows validate public files only. They use read-only repository permissions and pinned actions. Pull requests must not add credentials, tokens, banking/PayPal details, environment files, private research, commercial files or customer records. A lightweight pattern scan supplements GitHub scanning; neither is proof that all secrets are absent.
+Provide the affected version, a reproducible description and impact. Allow investigation and coordinated disclosure. Response times are not guaranteed for this independent project.
 
-The dashboard architecture stores data locally and unencrypted; the public repository does not collect those observations. No real customer data may appear in screenshots or examples.
+## Publication and privacy boundaries
+
+Read-only workflows validate curated public files. No credentials, personal observations, internal research records or unrelated implementation source may be added. Pinned actions and heuristic pattern scanning support this boundary; they do not prove that all security risks are absent.
+
+The documented dashboard design uses unencrypted browser storage and exports. The public repository collects no dashboard observations. Use synthetic records when discussing technical problems. Local-first design is not regulatory certification or an encrypted-storage guarantee.

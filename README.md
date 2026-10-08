@@ -1,120 +1,114 @@
-![Cognitive OS: a conceptual neural network and evidence-oriented workspace](assets/branding/cognitive-os-hero.png)
+![Cognitive OS conceptual network illustration; not an anatomical or efficacy model](assets/branding/cognitive-os-hero.png)
 
 # Cognitive OS
 
-**Evidence-Based Systems for Focus, Learning, Memory & Mental Performance**
+Evidence-Based Systems for Focus, Learning, Memory & Mental Performance
 
-Cognitive OS connects cognitive-science education with structured self-observation. It is a framework for understanding focus, learning, memory, sleep, recovery and everyday cognitive performance, with evidence review and local-first tools at its core.
+Official Documentation, Research Methodology and Technical Architecture
 
-![Research and documentation preview](assets/branding/status-preview.svg) ![Local-first design](assets/branding/status-local.svg) ![Proprietary documentation](assets/branding/status-license.svg)
+Cognitive OS is a research-oriented educational and technical framework for organizing evidence related to cognitive performance and translating it into structured learning, voluntary implementation and non-diagnostic self-observation. Public documentation and technical information about Cognitive OS are maintained in this repository.
 
-## Current status
+## Project purpose
 
-**Public repository: Research / Documentation Preview, 0.1.0-alpha.** This is the curated public surface: methodology, architecture, selected examples and prototype screenshots.
+The project addresses fragmented information, inconsistent evidence quality, oversimplified neuroscience and hype-driven interpretation. It makes the distinction between a study, an educational explanation and a personal observation visible. The aim is a traceable framework connecting education, implementation and review, with transparent evidence categories and explicit limits.
 
-**Commercial development: v0.2.x Research Foundation development target.** The private product is unfinished. The complete guide, evidence library, worksheets and customer tools are developed separately; this repository is not a free copy of the paid edition or a finished commercial release.
+This public documentation edition is **1.0.0**. It is an academic and technical information hub, not a clinically validated intervention or an independently peer-reviewed framework. Selected references and conceptual examples illustrate the method. An installable dashboard runtime is not included.
 
-Start with [getting started](docs/getting-started.md), the [project overview](docs/project-overview.md) or the [FAQ](docs/faq.md).
+## Core principles
 
-## Why Cognitive OS
+- **Evidence transparency:** preserve population, outcome, directness and uncertainty.
+- **Scientific caution:** distinguish evidence, interpretation, association and causation.
+- **Local-first privacy:** user-controlled records and exports, with unencrypted-storage limits stated.
+- **Educational use:** no diagnosis, treatment protocols or individualized healthcare decisions.
+- **Structured implementation:** modest, voluntary choices that accommodate real constraints.
+- **Explicit limitations:** selected review scope and unresolved questions remain visible.
+- **Reproducibility:** versioned documentation, curated publication scope and inspectable checks.
 
-A useful cognitive system needs two things: understandable evidence and a realistic way to act on it. Online information often places a replicated human finding beside a small exploratory study or an attractive speculation without explaining the difference.
-
-Cognitive OS makes that distinction visible. An observation is not a diagnosis. A promising study is not a guarantee. A personal experiment is a way to review habits, not proof that an intervention caused a medical effect.
-
-## Core areas
-
-| Understand | Build | Review |
-|---|---|---|
-| Attention, focus, memory and learning | Workable practice and deep-work routines | Observations and missing data |
-| Sleep, recovery and perceived stress | Accessible habits and digital boundaries | Feasibility and context |
-| Exercise, nutrition and cognitive aging | Low-cost educational implementation | Evidence limits and uncertainty |
-
-See the [cognitive-performance framework](docs/cognitive-performance-framework.md). Emerging technology is discussed as research, with established, promising, experimental and speculative claims kept distinct.
-
-## Evidence system
-
-| Grade | Evidence status |
-|---|---|
-| A | Strong evidence |
-| B | Moderate evidence |
-| C | Promising evidence |
-| D | Mixed evidence |
-| E | Limited evidence |
-| F | Preclinical / indirect evidence |
-| G | Speculative / insufficient evidence |
-
-Grades describe evidence status and **must not be interpreted as medical recommendations**. Grade, confidence, population, outcome and limitations belong together. The internal A–G rubric is not a formal GRADE assessment. Unreviewed records have no assigned grade.
-
-Read [evidence grading](EVIDENCE_GRADING.md) and [evidence methodology](docs/evidence-methodology.md). The public evidence-card example is a synthetic format demonstration, not an efficacy claim.
-
-## Architecture
+## System architecture
 
 ```mermaid
 flowchart LR
-  Sources[Research Sources] --> Review[Evidence Review]
-  Review --> Cards[Evidence Cards]
-  Cards --> Education[Educational Content]
-  Education --> Tools[Implementation Tools]
-  Tools --> Observation[User Self-Observation]
+  S[Scientific sources] --> V[Verification and contextual review]
+  V --> E[Category confidence and limitations]
+  E --> L[Educational explanation]
+  L --> I[Voluntary implementation]
+  I --> O[Local-first self-observation]
+  O -. Descriptive feedback .-> I
 ```
 
-The diagram describes an editorial process, not a biological causal pathway. See [architecture](ARCHITECTURE.md) for the product layers and public/private boundary.
+This is an information workflow, not a biological causal model. Personal observations inform reflection and do not upgrade scientific evidence. See [architecture](ARCHITECTURE.md).
 
-## Local-first privacy
+## Evidence grading system
 
-The customer dashboard prototype is designed to keep observations in the user's browser. It has no backend, account, telemetry or remote requests. Browser storage is unencrypted, and clearing site data may erase records. Customers control exports and backups. Any future network feature must state what leaves the device before it is enabled.
-
-This public repository collects no dashboard logs. GitHub itself has its own platform privacy practices. Read [privacy principles](docs/privacy-principles.md).
-
-## Prototype screenshots
-
-These screenshots contain invented demonstration observations, not customer data. They illustrate the private alpha interface; they do not imply clinical validation or a completed product.
-
-![Desktop dashboard prototype with daily log fields and descriptive weekly trends](assets/screenshots/dashboard-desktop.png)
-
-<img src="assets/screenshots/dashboard-mobile.png" alt="Mobile dashboard prototype, stacked for a narrow screen" width="360">
-
-## Roadmap
-
-| Milestone | Product stage |
+| Category | Meaning |
 |---|---|
-| 0.1 | Foundation and public documentation preview |
-| 0.2 | Research Foundation: reviewed cards and substantive pilot chapters |
-| 0.3–0.4 | Dashboard expansion and evidence engine |
-| 0.5–0.6 | Workbook and commercial packaging |
-| 0.7–0.8 | Scientific and product QA |
-| 0.9 | Release candidate |
-| 1.0 | Commercial release after all gates |
+| A | Strong |
+| B | Moderate |
+| C | Promising |
+| D | Mixed |
+| E | Limited |
+| F | Indirect, including relevant preclinical evidence |
+| G | Insufficient, including unresolved speculation |
 
-These are acceptance milestones, not promised dates. See [ROADMAP](ROADMAP.md) and [CHANGELOG](CHANGELOG.md).
+The categories are not a simple numerical ranking or a formal GRADE assessment. Mixed concerns inconsistency; indirect concerns relevance; insufficient concerns the basis for a conclusion. Confidence, risk and recommendation are separate. Read [the evidence framework](EVIDENCE_GRADING.md).
 
-## Research principles
+## Research methodology
 
-No fabricated studies, authors, DOI, PMID or statistics. Prioritize relevant systematic reviews and meta-analyses while assessing their quality. Distinguish human from preclinical evidence, acknowledge scope and limitations, and preserve uncertainty. Original educational prose is independently authored; competitor products are not sources of text.
+Define a bounded question; verify source identity; record access scope; appraise design, population, outcomes and consistency; document limitations; version the interpretation. A synthesis or RCT is assessed in context rather than graded automatically. Bibliographic verification is distinct from full-text appraisal and independent review.
 
-Read [research policy](RESEARCH_POLICY.md). Unverified claims are marked **UNVERIFIED — RESEARCH REQUIRED** and excluded from commercial benefit claims.
+Coverage is selected and is not an exhaustive systematic review. Independent external review has not occurred. The [research policy](RESEARCH_POLICY.md) and [methodology documentation](docs/02-methodology.md) explain these limits.
 
-## Medical disclaimer
+## Documentation & Research
 
-Cognitive OS is an educational project. It is **not medical advice** and does not diagnose, treat or cure medical or psychiatric conditions. It does not replace medication, psychotherapy or a clinician, or guarantee prevention of dementia. Consult an appropriately qualified healthcare professional for individualized medical decisions. See [DISCLAIMER](DISCLAIMER.md).
+For official documentation, research methodology, architecture, evidence framework and public technical information about Cognitive OS, explore the resources maintained in this repository.
 
-## Public and commercial editions
-
-| Public GitHub | Private / local product |
+| Resource | Purpose |
 |---|---|
-| Documentation, methodology, architecture | Full research library and reviewed synthesis |
-| Selected synthetic examples and screenshots | Complete master guide and paid worksheets |
-| Public roadmap and contribution policies | Proprietary tools, build pipeline and customer deliverables |
+| [Whitepaper](WHITEPAPER.md) | Substantial conceptual argument and verified selected references |
+| [Wiki pages](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Home.md) | Fifteen connected research and technical pages in the canonical source copy |
+| [Source-controlled Wiki](wiki-export/Home.md) | Reviewable canonical copy of Wiki content |
+| [Documentation index](docs/README.md) | Overview, methodology, privacy, dashboard, safety and glossary |
+| [Architecture](ARCHITECTURE.md) | Component responsibilities and information flow |
+| [Evidence framework](EVIDENCE_GRADING.md) | A–G categories, confidence and contextual judgment |
+| [Research methodology](docs/02-methodology.md) | Verification and appraisal scope |
+| [Security](SECURITY.md) | Reporting and public-data boundaries |
+| [Roadmap](ROADMAP.md) | Future questions and acceptance criteria |
+| [Citation](CITATION.cff) | Machine-readable attribution |
 
-There is no automatic mirror between them. Public visibility does not grant rights to redistribute the paid product. See [LICENSE](LICENSE.md).
+The separate GitHub Wiki is enabled but requires its first page to be initialized in an authenticated browser. All fifteen complete pages are available through the source-controlled links above; live Wiki synchronization remains pending.
 
-## Participation
+## Local-first software and privacy
 
-[Contributing](CONTRIBUTING.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Governance](GOVERNANCE.md) · [Security](SECURITY.md) · [Citation](CITATION.cff)
+The documented dashboard architecture uses browser-local observations and explicit JSON/CSV exports without a mandatory cloud account or server. Browser storage and exports are unencrypted. Clearing data, changing origin or sharing a profile can expose or lose records. Local-first is a design principle, not a security certification. Read [privacy](docs/06-local-first-privacy.md) and [self-observation](docs/08-self-observation.md).
+
+## Interface illustrations
+
+The following historical prototype screenshot uses synthetic demonstration observations. It is not participant data, evidence of efficacy or a current application certification.
+
+![Historical dashboard prototype with synthetic observations and descriptive trends](assets/screenshots/dashboard-desktop.png)
+
+The hero is a conceptual illustration, not an anatomical figure. [Asset descriptions](assets/README.md) state the scope of retained illustrations.
+
+## Contributing
+
+[Contribution guidance](CONTRIBUTING.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Governance](GOVERNANCE.md)
+
+Corrections should identify a specific statement, verified source and proposed interpretation. Do not post personal records or sensitive information in public issues.
+
+## Citation
+
+Pleșca, C. Ș. (2026). *Cognitive OS: Evidence-Based Systems for Focus, Learning, Memory & Mental Performance*. Public documentation edition 1.0.0. [Repository](https://github.com/Ciprian-LocalPulse/cognitive-os)
+
+Use [CITATION.cff](CITATION.cff) for metadata. The [Whitepaper](WHITEPAPER.md) is an authored framework paper, not a fabricated journal publication.
 
 ## Author
 
-**Ciprian Ștefan Pleșca** — independent creator and researcher.
+**Ciprian Ștefan Pleșca** — Independent Creator and Researcher.
 
-© 2026 Ciprian Ștefan Pleșca. All Rights Reserved where applicable. This project does not claim institutional affiliation, clinical accreditation or independent scientific certification.
+## Disclaimer
+
+Educational and informational use only; not medical advice. The project does not diagnose, treat or cure conditions, direct medication changes or guarantee cognitive outcomes. Individualized healthcare decisions require qualified professional advice. See [DISCLAIMER](DISCLAIMER.md).
+
+## Copyright
+
+© 2026 Ciprian Ștefan Pleșca. All Rights Reserved where applicable. Public visibility does not grant an unrestricted reuse license. See [LICENSE](LICENSE.md).

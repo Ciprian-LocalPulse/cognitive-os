@@ -1,6 +1,5 @@
-# Privacy principles
-Keep observations on the device by default. Minimize fields, avoid sensitive medical or identifying information, state storage limits clearly, and give the user deliberate export and deletion controls. Local-first does not mean encrypted or immune to loss.
+# Privacy Principles
 
-The private prototype has no cloud account, telemetry or outbound application requests. Browser localStorage may be visible to others using the profile; private mode, site-data deletion or origin changes can erase or isolate records. Backups are separate files and must be deleted separately.
+This maintained navigation page points to the current [privacy principles](06-local-first-privacy.md). Use the [documentation index](README.md), [Whitepaper](../WHITEPAPER.md) and [Wiki](https://github.com/Ciprian-LocalPulse/cognitive-os/blob/main/wiki-export/Home.md) for the complete reading routes.
 
-Future network features require an explicit description and user choice. This documentation repository contains no customer logs. GitHub hosting has its own processing and privacy policies. No blanket compliance claim is made.
+Public documentation edition 1.0.0; educational use, not medical advice.

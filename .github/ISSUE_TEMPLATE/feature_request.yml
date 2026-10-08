@@ -3,7 +3,7 @@ description: "Suggest a public-scope clarification or example."
 body:
   - type: markdown
     attributes:
-      value: "Issues are public. Do not include medical histories, credentials, personal logs or commercial files."
+      value: "Issues are public. Do not include medical histories, credentials, personal logs or unrelated implementation files."
   - type: textarea
     id: context
     attributes:

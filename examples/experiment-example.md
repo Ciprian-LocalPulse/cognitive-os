@@ -1,5 +1,6 @@
 # Educational experiment example
-**Invented observations, not a real study or customer record.**
+
+**Invented observations, not a real study or personal record.**
 
 Question: what focus ratings do I record during sessions when notifications are silenced?
 Metric: self-reported focus, 1–5. Baseline: three observations (2, 3, 3); follow-up: three (3, 4, 3).
